@@ -2,7 +2,7 @@ Name: mythes-sl
 Summary: Slovenian thesaurus
 %define upstreamid 20130130
 Version: 0.%{upstreamid}
-Release: 1%{?dist}
+Release: 2%{?dist}
 Source: http://193.2.66.133:85/download/thes_sl_SI_v2.zip
 Group: Applications/Text
 URL: http://www.tezaver.si/
@@ -41,6 +41,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/mythes/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.20130130-2
+- Mass rebuild 2013-12-27
+
 * Thu Jan 31 2013 Caolán McNamara <caolanm@redhat.com> - 0.20130130-1
 - Resolves: rhbz#905955 latest version
 
